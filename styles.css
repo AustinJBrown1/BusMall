@@ -1,0 +1,13 @@
+*{
+    text-decoration: underline;
+}
+
+#busLeft {
+    width: 200px;
+}
+#busMiddle {
+    width: 200px;
+}
+#busRight {
+    width: 200px;
+}
