@@ -1,13 +1,24 @@
 *{
     text-decoration: underline;
+    outline:1px solid goldenrod;
 }
 
 #busLeft {
     width: 200px;
+    height: 200px;
 }
 #busMiddle {
     width: 200px;
+    height: 200px;
 }
 #busRight {
     width: 200px;
+    height: 200px;
+}
+#busImages {
+    display: inline;
+}
+#mychart {
+    width: 400px;
+    height: 400px;
 }

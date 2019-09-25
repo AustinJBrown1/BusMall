@@ -1,7 +1,6 @@
 'use scrict';
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //globals
-alert('Please select the items that you would be most likely to purchase.');
 var busImagesTags = document.getElementById('busImages');
 var busLeft = document.getElementById('busLeft');
 var busMiddle = document.getElementById('busMiddle');
@@ -79,7 +78,8 @@ var handleClickOnBus = function(event){
   console.log(Bus.allImages[leftBusIndex]);
   console.log(Bus.allImages[middleBusIndex]);
   console.log(Bus.allImages[rightBusIndex]);
-  if(busVote === 10){
+  //measures the amount votes taken
+  if(busVote === 25){
     busImagesTags.removeEventListener('click', handleClickOnBus);
     console.log('you have completed the vote');
     alert('You completed the vote');
@@ -119,4 +119,5 @@ new Bus('Instructors favorite image','/Images/wine-glass.jpg');
 console.log(Bus.allImages);
 renderBus();
 busImagesTags.addEventListener('click', handleClickOnBus);
+
 
