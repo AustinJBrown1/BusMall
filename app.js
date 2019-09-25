@@ -80,7 +80,7 @@ var handleClickOnBus = function(event){
   console.log(Bus.allImages[leftBusIndex]);
   console.log(Bus.allImages[middleBusIndex]);
   console.log(Bus.allImages[rightBusIndex]);
-  if(busVote === 10){
+  if(busVote === 25){
     busImagesTags.removeEventListener('click', handleClickOnBus);
     console.log('you have completed the vote');
     alert('You completed the vote');
