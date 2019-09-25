@@ -73,6 +73,7 @@ var handleClickOnBus = function(event){
     }else{
     //tells the user to click on an image if they have not
       alert('you didn\'t select an image');
+      console.log('click an image');
     }
   }
   //displays the votes and views in the browser console
