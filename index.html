@@ -6,12 +6,13 @@
   <link  href = 'styles.css'rel = 'stylesheet'>
 </head>
 <body>
-  <section id = "busImages">
-    <img id= "busLeft" src="/Images/">
-    <img id= "busMiddle" src="/Images/">
-    <img id= "busRight" src="/Images/">
-  </section>
-  <p>Please chose the products that you would be most likely to purchase</p>
+  <div>
+    <section id = "busImages">
+      <img id= "busLeft" class = "busImg" src="/Images/">
+      <img id= "busMiddle"class = "busImg" src="/Images/">
+      <img id= "busRight" class = "busImg" src="/Images/">
+    </section>
+  </div>
   <article id = 'busListHead'>
     <p id = 'busData'></p>
   </article id = 'dataTableHead'>
@@ -22,42 +23,42 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
 <script src="app.js"></script>
 <script>
-// var ctx = document.getElementById('myChart').getContext('2d');
-//   var myChart = new Chart(ctx, {
-//     type: 'bar',
-//       data: {
-//         labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
-//           datasets: [{
-//             label: '# of Votes',
-//             data: [12, 19, 3, 5, 2, 3],
-//             backgroundColor: [
-//               'rgba(255, 99, 132, 0.2)',
-//               'rgba(54, 162, 235, 0.2)',
-//               'rgba(255, 206, 86, 0.2)',
-//               'rgba(75, 192, 192, 0.2)',
-//               'rgba(153, 102, 255, 0.2)',
-//               'rgba(255, 159, 64, 0.2)'
-//             ],
-//             borderColor: [
-//               'rgba(255, 99, 132, 1)',
-//                 'rgba(54, 162, 235, 1)',
-//                 'rgba(255, 206, 86, 1)',
-//                 'rgba(75, 192, 192, 1)',
-//                 'rgba(153, 102, 255, 1)',
-//                 'rgba(255, 159, 64, 1)'
-//               ],
-//             borderWidth: 1
-//         }]
-//       },
-//       options: {
-//           scales: {
-//               yAxes: [{
-//                   ticks: {
-//                       beginAtZero: true
-//                   }
-//               }]
-//           }
-//       }
-//   });
+var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+      data: {
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+              ],
+            borderWidth: 1
+        }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+  });
 </script>
 </html>
