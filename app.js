@@ -118,6 +118,4 @@ new Bus('Instructors favorite image','/Images/wine-glass.jpg');
 ////////////////////////////////////////////////////////////////////////////////////////////////
 console.log(Bus.allImages);
 renderBus();
-busImagesTags.addEventListener('click', handleClickOnBus);
-
-
+busImagesTags.addEventListener('click', handleClickOnBus)
